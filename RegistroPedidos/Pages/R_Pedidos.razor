@@ -84,8 +84,6 @@
                 <table class="table">
                     <thead class="thead-light">
                         <tr>
-                            <th scope="col">Id</th>
-                            <th scope="col">Orden Id</th>
                             <th scope="col">Producto</th>
                             <th scope="col">Cantidad</th>
                             <th scope="col">Costo</th>
@@ -97,8 +95,6 @@
                         @foreach (var item in Orden.OrdenesDetalle)
                         {
                         <tr>
-                            <td>@item.Id</td>
-                            <td>@item.OrdenId</td>
                             <td>@ProductosBLL.Buscar(item.ProductoId).Descripcion</td>
                             <td>@item.Cantidad</td>
                             <td>@item.Costo</td>
